@@ -39,12 +39,15 @@ section{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1); /* semi-transparent fallback */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 1000; /* Higher z-index for safety */
+    box-sizing: border-box; /* ensures padding doesn't break layout */
 }
+
 
 .header.sticky{
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
