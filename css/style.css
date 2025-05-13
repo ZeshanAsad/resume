@@ -365,13 +365,15 @@ span{
     cursor: pointer;
 }
 
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 2rem 9%;
-    background: var(--second-bg-color);
+footer {
+    background-color: #333;
+    padding: 6px 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    margin-top: 2rem;
+    /* Ensures it spans full screen */
+    box-sizing: border-box;
 }
 
 .footer-text p {
