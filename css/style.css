@@ -39,14 +39,16 @@ section{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.1); /* semi-transparent fallback */
+    background-color: rgba(255, 255, 255, 0.05); /* light transparent overlay */
+    backdrop-filter: blur(10px); /* frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000; /* Higher z-index for safety */
-    box-sizing: border-box; /* ensures padding doesn't break layout */
+    z-index: 1000;
+    box-sizing: border-box;
 }
+
 
 
 .header.sticky{
