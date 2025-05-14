@@ -252,23 +252,23 @@ span{
     margin: 1rem 0 3rem;
 }
 
-/* Projects section */
-#projects .projects {
+/* project section */
+#project .project {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 0;
 }
-#projects .projects-header h1 {
+#project .project-header h1 {
 	margin-bottom: 50px;
 }
-#projects .all-projects {
+#project .all-project {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
-#projects .project-item {
+#project .project-item {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -278,7 +278,7 @@ span{
 	overflow: hidden;
 	border-radius: 10px;
 }
-#projects .project-info {
+#project .project-info {
 	padding: 30px;
 	flex-basis: 50%;
 	height: 100%;
@@ -289,25 +289,25 @@ span{
 	background-image: linear-gradient(60deg, #39323c 0%, #685563 100%);
 	color: white;
 }
-#projects .project-info h1 {
+#project .project-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
 }
-#projects .project-info h2 {
+#project .project-info h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	margin-top: 10px;
 }
-#projects .project-info p {
+#project .project-info p {
 	color: white;
 }
-#projects .project-img {
+#project .project-img {
 	flex-basis: 50%;
 	height: 300px;
 	overflow: hidden;
 	position: relative;
 }
-#projects .project-img:after {
+#project .project-img:after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -317,13 +317,13 @@ span{
 	background-image: linear-gradient(60deg, #39323c 0%, #685563 100%);
 	opacity: .7;
 }
-#projects .project-img img {
+#project .project-img img {
 	transition: .3s ease transform;
 }
-#projects .project-item:hover .project-img img {
+#project .project-item:hover .project-img img {
 	transform: scale(1.1);
 }
-/* End Projects section */
+/* End project section */
 
 .portfolio {
     background: var(--second-bg-color);
