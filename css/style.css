@@ -259,8 +259,8 @@ span{
 	margin: 0 auto;
 	padding: 100px 0;
 }
-.projects-header h1 {
-	margin-bottom: 50px;
+.projects h2 {
+    margin-right: 5rem;
 }
 .all-projects {
 	display: flex;
