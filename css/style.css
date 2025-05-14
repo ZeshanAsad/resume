@@ -262,18 +262,20 @@ span{
 .projects .projects-header h1 {
 	margin-bottom: 50px;
 }
+
 .projects .all-projects {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	gap: 20px;
+	justify-items: center;
 }
+
 .projects .project-item {
+	width: 100%;
+	flex-direction: row;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-direction: column;
-	width: 80%;
 	margin: 20px auto;
 	overflow: hidden;
 	border-radius: 10px;
