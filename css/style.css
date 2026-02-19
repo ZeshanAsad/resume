@@ -428,3 +428,251 @@
 .testimonial-carousel .owl-dot.active::after {
     background: var(--primary);
 }
+
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1a1c28;
+    color: #e0e0e0;
+}
+
+/* Navbar Dark Mode */
+body.dark-mode .navbar {
+    background-color: #12141D !important;
+    border-bottom: 1px solid #2d2f3a;
+}
+
+body.dark-mode .navbar .nav-link {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .navbar .nav-link:hover,
+body.dark-mode .navbar .nav-link.active {
+    color: var(--primary) !important;
+}
+
+body.dark-mode .navbar-brand h1 {
+    color: var(--primary) !important;
+}
+
+body.dark-mode .navbar-brand.bg-secondary {
+    background-color: #2d2f3a !important;
+}
+
+/* Header Section Dark Mode */
+body.dark-mode #home {
+    background: url(../img/bg-header.png) left top no-repeat;
+    background-color: #12141D;
+    background-blend-mode: overlay;
+}
+
+body.dark-mode #home h1,
+body.dark-mode #home h2,
+body.dark-mode #home h3 {
+    color: #e0e0e0;
+}
+
+/* Background Sections Dark Mode */
+body.dark-mode .bg-light {
+    background-color: #12141D !important;
+}
+
+body.dark-mode .container-fluid.bg-light {
+    background-color: #12141D !important;
+}
+
+/* Cards and Content Dark Mode */
+body.dark-mode .service-item {
+    background-color: #1e202b !important;
+}
+
+body.dark-mode .service-item h4,
+body.dark-mode .service-item h6,
+body.dark-mode .service-item span {
+    color: #e0e0e0;
+}
+
+body.dark-mode .service-item i {
+    color: #e0e0e0 !important;
+}
+
+/* About Section Dark Mode */
+body.dark-mode #about p,
+body.dark-mode #about h3,
+body.dark-mode #about h1,
+body.dark-mode #about h5 {
+    color: #e0e0e0;
+}
+
+/* Skills Section Dark Mode */
+body.dark-mode #skill h1,
+body.dark-mode #skill h3,
+body.dark-mode #skill h6,
+body.dark-mode #skill p {
+    color: #e0e0e0;
+}
+
+body.dark-mode #skill .nav-pills .nav-link {
+    color: #e0e0e0;
+    background-color: #1e202b;
+}
+
+body.dark-mode #skill .nav-pills .nav-link.active {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+/* Tab Content Dark Mode */
+body.dark-mode .tab-content h5,
+body.dark-mode .tab-content h6,
+body.dark-mode .tab-content p {
+    color: #e0e0e0;
+}
+
+body.dark-mode .tab-content hr {
+    background-color: var(--primary);
+}
+
+/* Badges Section Dark Mode */
+body.dark-mode #badge h1 {
+    color: #e0e0e0;
+}
+
+/* Contact Section Dark Mode */
+body.dark-mode #contact h1,
+body.dark-mode #contact h3,
+body.dark-mode #contact p {
+    color: #e0e0e0;
+}
+
+body.dark-mode #contact .form-control {
+    background-color: #1e202b;
+    border-color: #2d2f3a;
+    color: #e0e0e0;
+}
+
+body.dark-mode #contact .form-control:focus {
+    background-color: #2d2f3a;
+    border-color: var(--primary);
+    color: #e0e0e0;
+}
+
+body.dark-mode #contact .form-floating label {
+    color: #999;
+}
+
+body.dark-mode #contact .form-floating > .form-control:focus ~ label,
+body.dark-mode #contact .form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: var(--primary);
+}
+
+/* Map Section Dark Mode */
+body.dark-mode .bg-dark {
+    background-color: #12141D !important;
+}
+
+/* Footer/Copyright Dark Mode */
+body.dark-mode .container-fluid.bg-dark {
+    background-color: #0b0d13 !important;
+}
+
+body.dark-mode .container-fluid.bg-dark a {
+    color: var(--primary) !important;
+}
+
+/* Typed Text Dark Mode */
+body.dark-mode .typed-cursor,
+body.dark-mode .typed-text-output {
+    color: #e0e0e0;
+}
+
+/* Modal Dark Mode */
+body.dark-mode .modal-content {
+    background-color: #1e202b;
+    color: #e0e0e0;
+}
+
+body.dark-mode .modal-header {
+    border-bottom-color: #2d2f3a;
+}
+
+body.dark-mode .modal-header h3,
+body.dark-mode .modal-header .btn-close {
+    color: #e0e0e0;
+}
+
+body.dark-mode .modal-footer {
+    border-top-color: #2d2f3a;
+}
+
+/* Flag Counter Dark Mode */
+body.dark-mode .flag-counter-wrapper {
+    background-color: #12141D !important;
+}
+
+/* Border Colors Dark Mode */
+body.dark-mode hr,
+body.dark-mode .border-end,
+body.dark-mode .border {
+    border-color: #2d2f3a !important;
+}
+
+/* Hover Effects Dark Mode */
+body.dark-mode .btn-outline-success {
+    color: #e0e0e0;
+    border-color: #28a745;
+}
+
+body.dark-mode .btn-outline-success:hover {
+    color: #ffffff;
+    background-color: #28a745;
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+    transition: all 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    transform: scale(1.1);
+}
+
+body.dark-mode #darkModeToggle {
+    background-color: #2d2f3a;
+    border-color: var(--primary);
+}
+
+body.dark-mode #darkModeToggle i {
+    color: #FFC448; /* Sun color in dark mode */
+}
+
+#darkModeToggle i {
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+/* Additional Dark Mode Adjustments */
+body.dark-mode .skill .progress {
+    background-color: #2d2f3a;
+}
+
+body.dark-mode .testimonial-icon {
+    background-color: #1e202b !important;
+}
+
+body.dark-mode .btn-play span {
+    border-left-color: #ffffff;
+}
+
+body.dark-mode .btn-play:after {
+    background-color: #1e202b;
+}
+
+body.dark-mode .years h5 {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .fw-bold:not(.text-primary) {
+    color: #e0e0e0 !important;
+}
