@@ -121,6 +121,57 @@
         loop: true,
     });
 
+    // Dark Mode Toggle
+function initDarkMode() {
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const darkModeIcon = document.getElementById('darkModeIcon');
+    
+    // Check for saved dark mode preference
+    const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+    
+    // Apply saved preference on page load
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+        darkModeIcon.classList.remove('fa-sun');
+        darkModeIcon.classList.add('fa-moon');
+        darkModeToggle.classList.remove('btn-outline-primary');
+        darkModeToggle.classList.add('btn-primary');
+    } else {
+        darkModeIcon.classList.remove('fa-moon');
+        darkModeIcon.classList.add('fa-sun');
+        darkModeToggle.classList.remove('btn-primary');
+        darkModeToggle.classList.add('btn-outline-primary');
+    }
+    
+    // Toggle dark mode on button click
+    darkModeToggle.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        
+        // Update icon and button style based on dark mode state
+        if (document.body.classList.contains('dark-mode')) {
+            // Dark mode ON - Show moon icon
+            darkModeIcon.classList.remove('fa-sun');
+            darkModeIcon.classList.add('fa-moon');
+            darkModeToggle.classList.remove('btn-outline-primary');
+            darkModeToggle.classList.add('btn-primary');
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            // Dark mode OFF - Show sun icon (bulb lit)
+            darkModeIcon.classList.remove('fa-moon');
+            darkModeIcon.classList.add('fa-sun');
+            darkModeToggle.classList.remove('btn-primary');
+            darkModeToggle.classList.add('btn-outline-primary');
+            localStorage.setItem('darkMode', 'disabled');
+        }
+    });
+}
+
+// Initialize dark mode when document is ready
+$(document).ready(function() {
+    initDarkMode();
+});
+
+    
     
 })(jQuery);
 
