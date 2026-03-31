@@ -77,10 +77,19 @@
 }
 
 
+
 /*** Navbar ***/
 .navbar.fixed-top {
-    display: none;
+    display: flex !important;  /* Override the display:none from original */
     transition: .5s;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Dark mode navbar blur */
+body.dark-mode .navbar.fixed-top {
+    background: rgba(18, 20, 29, 0.8) !important;
+    backdrop-filter: blur(10px);
 }
 
 .navbar .navbar-nav .nav-link {
